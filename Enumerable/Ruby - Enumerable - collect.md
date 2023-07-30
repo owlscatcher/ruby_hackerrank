@@ -38,8 +38,8 @@ To get to the other side!
 ## Solution
 ```ruby
 def create_crypt_hash()
-  arr00 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".chars
-  arr13 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm".chars
+  arr00 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ?!,.;:-".chars
+  arr13 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm ?!,.;:-".chars
   
   secret_hash = Hash.new
   arr00.size.times { |index| secret_hash.store(arr00[index], arr13[index]) }
@@ -50,7 +50,7 @@ end
 def rot13(secret_messages)
   # your code here
   secret_hash = create_crypt_hash()
-
-
+  
+  secret_messages.map { |ch| ch = secret_hash[ch] }.join
 end
 ```
