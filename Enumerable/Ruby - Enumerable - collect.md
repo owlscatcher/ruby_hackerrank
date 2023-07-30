@@ -36,6 +36,17 @@ To get to the other side!
 ```
 
 ## Solution
+
+Так как в параметры передают массив сообщений:
+```ruby
+secret_messages = [
+	["Why did the chicken cross the road?"],
+	["Gb trg gb gur bgure fvqr!"]
+]
+```
+
+Мы проходим по этому массиву 
+
 ```ruby
 def create_crypt_hash()
   arr00 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ?!,.;:-".chars
@@ -51,6 +62,8 @@ def rot13(secret_messages)
   # your code here
   secret_hash = create_crypt_hash()
   
-  secret_messages.map { |ch| ch = secret_hash[ch] }.join
+  secret_messages.map do |msg_arr|
+    msg_arr.chars.map { |ch| ch = secret_hash[ch] }.join
+  end
 end
 ```
