@@ -1,3 +1,5 @@
+## Problem
+
 Beside simple methods to iterate over objects, Ruby `Enumerable` provides a number of important higher order constructs that we shall explore in further challenges. One of such important methods is `collect` method, also known as `map`.
 
 `map` as the name may suggest, takes a function and maps (applies) it to a collection of values one by one and returns the collection of result.
@@ -31,4 +33,24 @@ On application of ROT13,
 ```bash
 Jul qvq gur puvpxra pebff gur ebnq?
 To get to the other side!
+```
+
+## Solution
+```ruby
+def create_crypt_hash()
+  arr00 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".chars
+  arr13 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm".chars
+  
+  secret_hash = Hash.new
+  arr00.size.times { |index| secret_hash.store(arr00[index], arr13[index]) }
+
+  secret_hash
+end
+
+def rot13(secret_messages)
+  # your code here
+  secret_hash = create_crypt_hash()
+
+
+end
 ```
