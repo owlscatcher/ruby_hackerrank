@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Enumerable/Ruby - Enumerable - reduce.md",
+                "file": "Enumerable/Ruby - Enumerable - collect.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Enumerable/Ruby - Enumerable - reduce.md",
+                "file": "Enumerable/Ruby - Enumerable - collect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Enumerable/Ruby - Enumerable - reduce.md",
+                "file": "Enumerable/Ruby - Enumerable - collect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Enumerable/Ruby - Enumerable - reduce.md"
+                "file": "Enumerable/Ruby - Enumerable - collect.md"
               }
             }
           }
@@ -162,8 +162,8 @@
   },
   "active": "90cc8ee2cfea0788",
   "lastOpenFiles": [
-    "Enumerable/Ruby - Enumerable - collect.md",
     "Enumerable/Ruby - Enumerable - reduce.md",
+    "Enumerable/Ruby - Enumerable - collect.md",
     "README.md",
     "images",
     "images/Pasted image 20230731004743.png",

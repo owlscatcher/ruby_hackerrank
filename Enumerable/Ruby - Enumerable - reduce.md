@@ -49,3 +49,20 @@ Consider an arithmetico-geometric sequence where the  $n^{th}$ term of the seque
 
 Первое, с чем нам придется побороться, это кривой тест для задани, потому что мы будем получать вот такую ошибку:
 
+```bash
+- Solution.rb:27:in `<main>': uninitialized constant Fixnum (NameError)
+    
+
+- unless (t1.is_a? Fixnum or t1.is_a? Bignum)
+    
+-                  ^^^^^^
+```
+
+Решением будет добавить перед методом вот это:
+
+```ruby
+Fixnum = Integer
+Bignum = Integer
+```
+
+Ошибка связана с тем, что происходит проверка, возвращаем мы `Fixnum` или `Bignum`, а в Ruby до 2.4 этих классов не существовало.
