@@ -72,5 +72,19 @@ Bignum = Integer
 В параметры `inject` можно передавать первоначальное значение аккумулятора, далее в блоке нужно указать два параметра, это аккумулятор и наш объект, с которым мы будем что-то делать и добавлять к аккумулятору:
 
 ```ruby
-obj.inject(0)
+obj.inject(0) { |acc, element| acc + element }
+```
+
+Вот и весь фокус, полный код решения:
+
+```ruby
+Fixnum = Integer
+Bignum = Integer
+
+def sum_terms(n)
+  # your code here
+  (1..n).inject(0) do |acc, element| 
+    acc + element * element + 1 if element >= 0
+  end
+end
 ```
