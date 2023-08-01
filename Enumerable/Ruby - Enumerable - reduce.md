@@ -44,5 +44,8 @@ Other examples,
 => 151200
 ```
 
-Consider an arithmetico-geometric sequence where the $$n_{tx}$$
+Consider an arithmetico-geometric sequence where the  $n^{th}$ term of the sequence is denoted by $t_{n} = n^{2} + 1, n\geq 0$. In this challenge, your task is to complete the `sum` method which takes an integer `n` and returns the **sum to the n terms of the series**.
 ## Solution
+
+Первое, с чем нам придется побороться, это кривой тест для задани, потому что мы будем получать вот такую ошибку:
+
