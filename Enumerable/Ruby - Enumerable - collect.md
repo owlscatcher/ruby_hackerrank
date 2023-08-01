@@ -4,9 +4,8 @@ Beside simple methods to iterate over objects, Ruby `Enumerable` provides a numb
 
 `map` as the name may suggest, takes a function and maps (applies) it to a collection of values one by one and returns the collection of result.
 
-That is, $map(f(x), [x_{1}, x_{2}, x_{3}, \dots, x_{n}]) \to [f(x_{1}, f(x_{2}, \dots, f(x_{n})))$
+That is, $map(f(x), [x_{1}, x_{2}, x_{3}, \dots, x_{n}]) \to [f(x_{1}, f(x_{2}, \dots, f(x_{n}]$
 
-![[Pasted image 20230731004743.png]]
 This single powerful method helps us to operate on a large number of values at once.
 
 For example,
