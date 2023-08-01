@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "b350b080e317c25d",
@@ -160,7 +161,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "90cc8ee2cfea0788",
+  "active": "97bb89c1dd56cc70",
   "lastOpenFiles": [
     "README.md",
     "Enumerable/Ruby - Enumerable - collect.md",
